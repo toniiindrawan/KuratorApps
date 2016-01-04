@@ -9,14 +9,14 @@
         android:layout_height="match_parent"
         android:id="@+id/scrollView">
         <LinearLayout
-            android:paddingRight="30dp"
-            android:paddingLeft="30dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
 
             <ImageView
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="45dp"
                 android:layout_gravity="center"
                 android:layout_width="102dp"
                 android:layout_height="102dp"
@@ -40,8 +40,8 @@
 
             <EditText
                 android:layout_gravity="center"
-                android:layout_marginTop="73dp"
-                android:layout_width="300dp"
+                android:layout_marginTop="23dp"
+                android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:id="@+id/textUsername"
                 android:layout_alignParentLeft="true"
@@ -52,50 +52,46 @@
             <EditText
                 android:layout_gravity="center"
                 android:inputType="textPassword"
-                android:layout_marginTop="23dp"
-                android:layout_width="300dp"
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:id="@+id/textPassword"
                 android:layout_below="@+id/textUsername"
                 android:hint="Password"
                 android:singleLine="true" />
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_gravity="center"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
                     android:textColor="#FFF44336"
+
                     android:textSize="12sp"
                     android:fontFamily="Roboto-Regular"
                     android:layout_marginTop="0dp"
                     android:layout_width="192dp"
                     android:layout_height="28dp"
                     android:text="Username or Password is incorrect"
-                    android:id="@+id/textWarning" />
+                    android:id="@+id/textWarning"
+                    android:layout_alignParentStart="true"/>
 
 
                 <ImageView
-                    android:layout_marginLeft="84.5dp"
                     android:layout_marginTop="0dp"
                     android:layout_width="17dp"
                     android:layout_height="15dp"
                     android:id="@+id/imageWarning"
                     android:src="@drawable/ic_error"
-                    android:layout_gravity="right" />
-            </LinearLayout>
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
             <Button
                 android:layout_gravity="center"
                 android:textColor="#ffffff"
                 android:background="#FF178AB4"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:text="LOGIN"
-                android:paddingTop="15dp"
-                android:paddingBottom="14dp"
-                android:paddingLeft="129dp"
-                android:paddingRight="130dp"
                 android:id="@+id/buttonLogin"
                 android:layout_marginTop="23dp"
                 />
